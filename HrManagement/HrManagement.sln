@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrManagement", "HrManagement\HrManagement.csproj", "{2548A357-D532-4099-8444-40D24088AB17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrManagement.DataAccess", "HrManagement.DataAccess\HrManagement.DataAccess.csproj", "{C3690C6D-A07A-44EF-90E6-E830998D5AA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2548A357-D532-4099-8444-40D24088AB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2548A357-D532-4099-8444-40D24088AB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2548A357-D532-4099-8444-40D24088AB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2548A357-D532-4099-8444-40D24088AB17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3690C6D-A07A-44EF-90E6-E830998D5AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3690C6D-A07A-44EF-90E6-E830998D5AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3690C6D-A07A-44EF-90E6-E830998D5AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3690C6D-A07A-44EF-90E6-E830998D5AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
