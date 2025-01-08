@@ -15,9 +15,9 @@ public abstract class GenericRepository<T> : IGenericRepository<T> where T : cla
         _dbSet = context.Set<T>();
     }
     
-    public T? GetById(int id)
+    public IQueryable<T> GetById(int id)
     {
-        return _dbSet.FirstOrDefault(x => x.Id == id);
+        return GetAll().Where(x => x.Id == id);
     }
 
     public IQueryable<T> GetAll()
@@ -33,7 +33,7 @@ public abstract class GenericRepository<T> : IGenericRepository<T> where T : cla
 
     public bool Update(T entity)
     {
-        var oldEntity = GetById(entity.Id);
+        var oldEntity = GetById(entity.Id).FirstOrDefault();
         if (oldEntity is null) return false;
 
         UpdateEntity(oldEntity, entity);
@@ -42,7 +42,7 @@ public abstract class GenericRepository<T> : IGenericRepository<T> where T : cla
 
     public bool Delete(int id)
     {
-        var entity = GetById(id);
+        var entity = GetById(id).FirstOrDefault();
         if (entity is null) return false;
 
         _dbSet.Remove(entity);

@@ -22,6 +22,5 @@ public class EmployeeRepository : GenericRepository<Employee>
 
     protected override void DeleteAdditionalDependancies()
     {
-        throw new NotImplementedException();
     }
 }
